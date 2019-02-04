@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Game GIFs</title>
+
+        <!-- Added a link to Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <!-- This links to the jQuery Library -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>    	
+    </head>
+    
+<body>
+<h4 class="text-center"> Welcome to my video game GIF website. Click on any of the buttons to see 10 video game GIFs. Click on the GIF to animate it. Click on it again to stop the animation. Search the GIPHY API by entering a topic in the Search box and clicking the “Game On!” button.</h4>
+
+<!-- This will be where the buttons are added and displayed. -->
+<div id="buttonItems"></div>
+
+<!-- This is the form to add a video game themed button to the array. -->
+<form>
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" id="game-input" class="form-control" placeholder="Enter name of a game">
+        </div>
+        <input id="addVideoGame" type="submit" class="btn btn-success" value="Game On!">
+        <!-- If there are any error messages, they will appear here -->
+        <span id="entry" style="color: white; background: red"></span>
+    </div>
+</form>
+
+<!-- This is where the ratings and images will be shown when the user clicks a game button. --> 
+<div id="ratings"></div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
